@@ -26,7 +26,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   [@SockingPanda](https://github.com/SockingPanda) [#584](https://github.com/jeertmans/manim-slides/pull/584)
 
 ### Added
-* Added vertical slide implementation to html exports of presentations. [@DaughterOfSpring](https://github.com/daughterOfSpring) [#602](https://github.com/jeertmans/manim-slides/pull/602)
+
+- Added vertical slide implementation to html exports of presentations. [@DaughterOfSpring](https://github.com/daughterOfSpring) [#602](https://github.com/jeertmans/manim-slides/pull/602)
 
 (v5.5.3)=
 ## [v5.5.3](https://github.com/jeertmans/manim-slides/compare/v5.5.2...v5.5.3)
