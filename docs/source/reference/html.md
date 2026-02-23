@@ -41,7 +41,8 @@ Slides default to a "horizontal" arrangement by default. This means that each
 slide follows the next in a linear progression. If you instead wish to add
 an additional dimension to your slides and have "vertical" groupings under a
 given "horizontal" slide, you may pass the keyword argument "direction" to the
-next_slide method and give it the argument "vertical". The "horizontal" slides
+{meth}`next_slide<manim_slides.slide.Slide.next_slide>`
+method and give it the argument "vertical". The "horizontal" slides
 will be the main progression of your presentation accessible by tabbing left
 or right using those arrow keys. For "vertical" slides you move to the "horizontal"
 parent slide and use the up and down keys to navigate through the slides that are
@@ -53,13 +54,13 @@ Note that no direction argument is passed to
 {meth}`self.next_slide()<manim_slides.slide.Slide.next_slide>`.
 
 ```{eval-rst}
-..manim-slides:: MySlide
+.. manim-slides:: HorizontalSlides
     :config_options: slide_number=true
 
     from manim import *
     from manim_slides import Slide
 
-    class BasicExample(Slide):
+    class HorizontalSlides(Slide):
         def construct(self):
             circle = Circle(radius=3, color=BLUE)
             dot = Dot()
@@ -78,13 +79,13 @@ moves from slide 1 to slide 3, while to access slide 2 you must be on slide 1 an
 press the down key.
 
 ```{eval-rst}
-..manim-slides:: MySlide
+.. manim-slides:: VerticalAndHorizontalSlides
     :config_options: slide_number=true
 
     from manim import *
     from manim_slides import Slide
 
-    class BasicExample(Slide):
+    class VerticalAndHorizontalSlides(Slide):
         def construct(self):
             circle = Circle(radius=3, color=BLUE)
             dot = Dot()
