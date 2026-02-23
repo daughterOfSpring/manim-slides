@@ -60,17 +60,17 @@ Note that no direction argument is passed to
     from manim_slides import Slide
 
     class BasicExample(Slide):
-    def construct(self):
-        circle = Circle(radius=3, color=BLUE)
-        dot = Dot()
+        def construct(self):
+            circle = Circle(radius=3, color=BLUE)
+            dot = Dot()
 
-        self.play(GrowFromCenter(circle))
+            self.play(GrowFromCenter(circle))
 
-        self.next_slide(loop=True)
-        self.play(MoveAlongPath(dot, circle), run_time=2, rate_func=linear)
-        self.next_slide()
+            self.next_slide(loop=True)
+            self.play(MoveAlongPath(dot, circle), run_time=2, rate_func=linear)
+            self.next_slide()
 
-        self.play(dot.animate.move_to(ORIGIN))
+            self.play(dot.animate.move_to(ORIGIN))
 ```
 
 In this example the second slide is a "vertical" slide so the left right progression
