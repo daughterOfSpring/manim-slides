@@ -49,7 +49,8 @@ grouped under the initial slide. You may still use the left/right navigation to
 move from any slide in the vertical stack to the next "horizontal" slide.
 
 In the following example we have only the linear "horizontal" slides.
-Note that no direction argument is passed to self.next_slide().
+Note that no direction argument is passed to
+{meth}`self.next_slide()<manim_slides.slide.Slide.next_slide>`.
 
 ```{eval-rst}
 ..manim-slides:: MySlide
