@@ -94,7 +94,7 @@ press the down key.
 
             self.next_slide(direction="vertical", loop=True)
             self.play(MoveAlongPath(dot, circle), run_time=2, rate_func=linear)
-            self.next_slide()
+            self.next_slide(direction="vertical")
 
             self.play(dot.animate.move_to(ORIGIN))
 ```
